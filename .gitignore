@@ -1,12 +1,15 @@
-# Terraform
+# Terraform — never commit state or secrets
 **/.terraform/
 *.tfstate
 *.tfstate.backup
 *.tfvars
+!*.tfvars.example
 .terraform.lock.hcl
+override.tf
+override.tf.json
 
-# Downloads / temp
-~/downloads/
+# Local downloads
+downloads/
 
 # OS
 .DS_Store
